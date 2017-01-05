@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title> </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script type = "text/javascript">
+            function show() {
+                document.getElementById("myDiv").style.display="block";
+                setTimeout("hide()", 5000);  // 5 seconds
+            }
+        
+            function hide() {
+                document.getElementById("myDiv").style.display="none";
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="Taylor Swift"/>
+            <input type="submit" value="Gifs"/>
+        </form>
+        <input type = "button" value = "Show image for 5 seconds" onclick = "show()"><br><br>
+        <div id = "myDiv" style="display:none"><img id = "Gifs" src = "http://giphy.com/gifs/golden-state-warriors-memphis-grizzlies-steph-curry-3oEdv737WUljfftndm"></div>
+
+    </body>
+</html>
